@@ -1,0 +1,122 @@
+<!--
+Save as three separate files in the same folder:
+  1) index.html
+  2) styles.css
+  3) script.js
+
+Open index.html in your browser. Replace # links with your project URLs.
+--> 
+
+<!-- ========== index.html ========== -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Ardiansyah</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header container reveal">
+    <div class="brand">
+      <h1>Ardiansyah</h1>
+      <p class="muted"> UI / UX • Web Developer</p>
+    </div>
+    <div class="controls">
+      <button id="themeToggle" aria-label="Toggle dark mode" class="btn-icon">🌙</button>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero container reveal">
+      <div class="hero-inner">
+        <h2>Beautiful, functional web interfaces — <span class="accent">crafted with care</span>.</h2>
+        <p class="muted">I build small to medium web projects and polish interfaces to be clean, fast, and delightful.</p>
+        <div class="cta-row">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container reveal">
+      <h3>Selected Projects</h3>
+      <div class="grid" id="projectGrid">
+        <!-- Replace href values with your project links -->
+        <a class="card project-card" href="https://tabular.id" target="_blank" rel="noopener">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Project One</h4>
+            <p class="muted">Your SQL Editor, Forged with Rust: Fast, Safe, Efficient.</p>
+            <span class="tag">Tabular • Mysql</span>
+          </div>
+        </a>
+
+        <a class="card project-card" href="#" target="_blank" rel="noopener">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Project Two</h4>
+            <p class="muted">Comming Soon</p>
+            <span class="tag">Warung • E-commerce</span>
+          </div>
+        </a>
+
+        <a class="card project-card" href="#" target="_blank" rel="noopener">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Project Three</h4>
+            <p class="muted">Comming Soon</p>
+            <span class="tag">D3 • Node</span>
+          </div>
+        </a>
+
+        <a class="card project-card" href="#" target="_blank" rel="noopener">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Project Four</h4>
+            <p class="muted">Comming Soon</p>
+            <span class="tag">HTML • CSS • JS</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container reveal">
+      <h3>About me</h3>
+      <p class="muted">
+        I am Mohamad Ardiansah Pratama from SMK Pertiwi Kuningan. I am a Web Developer who designs and implements UI for web projects with a 
+        focus on clarity, performance, and smooth, refined micro-interactions. I enjoy creating animations that feel cinematic yet remain subtle so they 
+        don’t interfere with usability.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container reveal">
+      <h3>Contact</h3>
+      <p class="muted">Want to work together? Reach out — I typically respond within a day.</p>
+      <a class="btn" href="mohamadardiansyahpratama90@gmail.com">My Email</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer container reveal">
+      <a class="btn" href="https://wa.me/6285797714976">Chat via WhatsApp</a>
+      <a class="btn" href="https://t.me/ardiansyah1009">Chat via Telegram</a>
+      <a class="btn" href="https://instagram.com/ar.sy4hh">DM via Instagram</a>
+      <p class="muted">© <span id="year"></span> Ardiansyah — Built with care.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
